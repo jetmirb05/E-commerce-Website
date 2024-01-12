@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Cleanser</title>
+    <link rel="stylesheet" href="bodycleanser.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <div class="navbar">
+        <div>
+            <img src="../../assets/navbar-logo.svg" alt="" height="200px" width="200px">
+        </div>
+        <div>
+            <ul class="navbar-sections">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#product-sections">Our Products</a></li>
+                <li><a href="../../help/WhyCeraVe.html">Why CeraVe</a></li>
+                <li><a href="../../skincare solution/skincaresolution.html">Skincare Solution Finder</a></li>
+                <li><a href="../../card/cart.html">Card</a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+
+
+    <div class="import">
+
+    </div>
+
+
+    <div class="lastDiv">
+        <div class="leftDiv">
+            <img src="../../assets/cerave-logo-white.svg">
+            <p>© CERAVE. All rights reserved.</p>
+        </div>
+        <div class="rightDiv">
+            <div class="lastContent">
+                <div class="leftLinks">
+                    <li class="footerLinks"><a href="#" class="home1">Home</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">Cities</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">Prices</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">FAQ</a></li>
+
+                </div>
+                <div class="rightLinks">
+                    <li class="footerLinks"><a href="#" class="media1">Media</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Terms & Conditions</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Imprint</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Privacy Policy</a></li>
+                </div>
+                
+            </div>
+            <div class="lastImages">
+                <a href="#"><img src="../../assets/social-media-logo/facebook.png" height="50px" width="50px"></a>
+                <a href=""><img src="../../assets/social-media-logo/twitter.png" height="50px" width="50px"></a>
+                <a href=""><img src="../../assets/social-media-logo/instagram.png" height="50px" width="50px"></a>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <script type="module">
+        import ProductObject, { sortProductsCheapestToExpensive, sortProductsExpensiveToCheapest } from '../../modules/ProductObject.js';
+
+        document.querySelector('.import').innerHTML = ProductObject('BODY','CLEANSERS', 'The right body cleanser or body wash will help your other products, like moisturizer, absorb easier to hydrate and soothe your skin, as well as provide targeted treatment such as smoothing skin texture, hydrating dry body skin, or soothing parched skin. All of our gel cleansers, cream cleansers, foaming cleansers, and bars thoroughly cleanse skin and hydrate, while some body cleansers provide gentle exfoliation as well. Formulated with three essential ceramides, they clean your skin while working to restore and maintain your skin barrier, allowing you to maintain your skins natural moisture. Plus, theyre fragrance-free and contain additional active ingredients like salicylic acid, niacinamide, and hyaluronic acid to address specific skin concerns as you cleanse.', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products/hydrating-foaming-oil-cleanser/without-badge/desktop/12_hydrating_foaming_oil_cleanser_8oz_int_0153_main_r2-desktop-700x875-v1.jpg', 'Hydrating Foaming Oil Cleanser', 'Lightweight cleansing oil for face and body', '14.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/skincare/cleansers/acne-foaming-cream-wash/acne-foaming-wash-pdp-700x785-v1.jpg', 'Acne Foaming Cream Wash', '10% Benzoyl peroxide acne wash for face and body', '24.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products-v3/hydrating-cleanser-bar/700x875/cerave_hydrating_cleansing_bar_packing_front-700x875-v2.jpg', 'Hydrating Cleanser Bar', 'Gentle cleansing bar with hydration', '9.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products/salicylic-acid-cleanser-bar-for-rough-bumpy-skin/updated_packshots/new_2021-12-09/cerave_cerave_sacleanserbar-primary-700x875-v2.jpeg', 'SA Cleanser Bar for Rough & Bumpy Skin', 'Dual exfoliation salicylic acid cleanser bar for body', '14.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products/foaming-cleanser-bar/700x875/foaming_cleansing_bar_45oz_packing_front-700x875-v2.jpg', 'Foaming Cleanser Bar', 'Soap-free cleansing bar for normal to oily skin', '9.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/product-v6/cerave_sa_body_wash_10oz-with-badge_front-700x875-v1.jpg', 'SA Body Wash for Rough & Bumpy Skin', 'Salicylic acid body wash to exfoliate skin', '24.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products/soothing-body-wash/700x875/soothing-body-wash-front-700x875-v1.jpg', 'Soothing Body Wash', 'Soothing body wash for very dry skin', '34.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/product-v6/cerave_psoriasis_cleanser-with-badge_8oz_front-700x875-v1.jpg', 'Psoriasis Cleanser', 'Psoriasis body wash with salicylic acid', '14.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/product-v5/diabetics-cleansing-wash/diabeticsdryskinreliefcleansingwashfront700x875v2.jpg', 'Diabetics’ Dry Skin Relief Cleansing Wash', 'Hydrating diabetics skin cleanser', '34.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products-v3/hydrating-body-wash/700x875/cerave_hydrating_body_wash_10oz_front-700x875-v2.jpg', 'Hydrating Body Wash', 'Foaming body wash for normal to dry skin', '24.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/product-v6/cerave_psoriasis_cleanser-with-badge_8oz_front-700x875-v1.jpg', 'Psoriasis Cleanser Special Edition', 'Psoriasis body wash with salicylic acid', '39.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/product-v6/cerave_sa_body_wash_10oz-with-badge_front-700x875-v1.jpg', 'SA Body Wash for Rough Special Edition', 'Salicylic acid body wash to exfoliate skin', '24.99$');
+
+        window.sortProductsCheapestToExpensive = sortProductsCheapestToExpensive;
+        window.sortProductsExpensiveToCheapest = sortProductsExpensiveToCheapest;
+
+        document.querySelectorAll('.product-btn').forEach(button => {
+        button.addEventListener('click', function() {
+        const productElement = this.closest('.product');
+        const productName = productElement.querySelector('.product-h2').innerText;
+        const productPrice = productElement.querySelector('.product-h1').innerText;
+        const productImg = productElement.querySelector('.product-img').src;
+
+        const price = parseFloat(productPrice.replace(/[^0-9\.]/g, ''));
+
+        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        cartItems.push({ name: productName, price: price, imgUrl: productImg });
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+    });
+});
+
+    </script>
+</body>
+</html>

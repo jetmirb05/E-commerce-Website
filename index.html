@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CeraVe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--NAVBAR-->
+    <div class="navbar">
+        <div>
+            <img src="assets/navbar-logo.svg" alt="" height="200px" width="200px">
+        </div>
+        <div>
+            <ul class="navbar-sections">
+                <li><a href="#">Home</a></li>
+                <li><a href="#product-sections">Our Products</a></li>
+                <li><a href="help/WhyCeraVe.html">Why CeraVe</a></li>
+                <li><a href="skincare solution/skincaresolution.html">Skincare Solution Finder</a></li>
+                <li><a href="card/cart.html">Card</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--SLIDER-->
+    <div id="slider">
+        <div class="slides">
+            <div class="slide">
+                <div class="slide-text">
+                    <h2>COLD WEATHER</h2>
+                    <h2>ESSENTIAL</h2>
+                    <h1>SKINCARE</h1>
+                   
+                    <button class="quiz-button white-btn">DISCOVER NOW</button>
+                </div>
+                <img src="assets/main-slider/second.png" alt="Second Image">
+            </div>
+
+            <div class="slide">
+                <div class="slide-text">
+                    <h1 class="blue">WHAT IS</h1>
+                    <h1 class="blue">SLUGGING</h1>
+                    <a href="help/WhyCeraVe.html"><button class="quiz-button blue-btn">LEARN ABOUT THIS SKINCARE TREND</button></a>
+                </div>
+                <img src="assets/main-slider/third.png" alt="Third Image">
+            </div>
+
+            <div class="slide">
+                <div class="slide-text">
+                    <h2 class="blue">DEVELOPED WITH</h2>
+                    <h1 class="blue">DERMS +</h1>
+                    <h1 class="blue">DESIGNED</h1>
+                    <p class="blue">JUST FOR YOU</p>
+                    <h3 class="blue">OUR NEW 3-MINUTE QUIZ IS READY</h3>
+                    <a href="skincare solution/skincaresolution.html"><button class="quiz-button blue-btn">TAKE THE QUIZ</button></a>
+                </div>
+                <img src="assets/main-slider/first.png" alt="First Image">
+            </div>
+            
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <button id="prev" class="nav-button">❮</button>
+        <button id="next" class="nav-button">❯</button>
+    </div>
+    
+    <!--PRODUCT SECTION-->
+    <div class="product-sections" id="product-sections">
+        <h2 class="blue">Explore Products By Category</h2>
+        <div class="products">
+            <a href="ProductCategories/facialcleanser/facialcleanser.html">
+                <div class="product-category">
+                    <img src="assets/product-sections/cleanser.png" alt="" height="260px" width="210px">
+                    <p>FACIAL CLEANSER</p>
+                </div>
+            </a>
+            <a href="ProductCategories/facialmoisturizer/facialmoisturizer.html">
+                <div class="product-category">
+                    <img src="assets/product-sections/moisturizer.png" alt="" height="260px" width="210px">
+                    <p>FACIAL MOISTURIZERS</p>
+                </div>
+            </a>
+            <a href="ProductCategories/bodycleanser/bodycleanser.html">
+                <div class="product-category">
+                    <img src="assets/product-sections/body-cleanser.png" alt="" height="260px" width="210px">
+                    <p>BODY CLEANSER</p>
+                </div>
+            </a>
+            <a href="ProductCategories/bodymoisturizer/bodymoisturizer.html">
+                <div class="product-category">
+                    <img src="assets/product-sections/body-moisturizer.png" alt="" height="260px" width="210px">
+                    <p>BODY MOISTURIZERS</p>
+                </div>
+            </a>
+            <a href="ProductCategories/facialserums/facialserums.html">
+                <div class="product-category">
+                    <img src="assets/product-sections/facial-serum.png" alt="" height="260px" width="210px">
+                    <p>FACIAL SERUMS</p>
+                </div>
+            </a>
+            <a href="ProductCategories/sunscreen/sunscreen.html">
+                <div class="product-category">
+                    <img src="assets/product-sections/sunscreen.png" alt="" height="260px" width="210px">
+                    <p>SUNSCREENS</p>
+                </div>
+            </a>
+            <a href="ProductCategories/forbaby/forbaby.html">
+                <div class="product-category">
+                    <img src="assets/product-sections/for-baby.png" alt="" height="260px" width="210px">
+                    <p>FOR BABY</p>
+                </div>
+            </a>
+            <a href="ProductCategories/ointment/ointment.html">
+                <div class="product-category">
+                    <img src="assets/product-sections/ointment.png" alt="" height="260px" width="210px">
+                    <p>OINTMENTS</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <!--VIDEO PART-->
+    <div class="dark-blue-background">
+        <div class="blue-background">
+            <div class="light-blue-background">
+                <div class="light-blue-content">
+                    <div class="light-blue-divs upper-div">
+                        <h2 class="video-h2">WHY CREAMIDES MATTER</h2>
+                        <div style="width: 300px; height: 1px; background-color: white;"></div>
+                    </div>
+                    <div class="light-blue-divs lower-div">
+                            <div>
+                                <h3 class="video-h3">CeraVe contains 3</h3>
+                                <h3 class="video-h3">essential ceramides</h3>
+                            </div>
+                            <div>
+                                <h2 class="video-h2">to help restore your skin’s</h2>
+                            <h2 class="video-h2">natural barrier, helping to lock</h2>
+                            <h2 class="video-h2">in moisture and seal out</h2>
+                            <h2 class="video-h2">impurities.</h2>
+                            </div>
+                    </div>
+                </div>
+                <div class="video-div">
+                    <video height="100%" loop autoplay muted> <!-- Add 'controls' attribute to display video controls -->
+                        <source src="assets/videos/ceramides.mp4" type="video/mp4">
+                        Your browser does not support the video tag. <!-- Fallback text for browsers that do not support the video tag -->
+                    </video>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!--QUOTE PART-->
+    <div class="quote-part">
+        <div>
+            <img src="assets/product-sections/cleanser.png" alt="">
+        </div>
+        <div class="quote-part-down-div">
+            <div class="quote-part-content">
+                "A dermatologist recommended this cleanser and it is absolutely wonderful. My face feels moisturized right out of the shower, which is something I have never experienced before using a cleanser. I highly recommend it!" 
+            </div>
+            <div class="quote-part-two">
+                JONATHAN, ★★★★★
+            </div>
+        </div>
+    </div>
+
+
+    <!--TAKE THE QUIZ PART-->
+    <div class="personalized-skincare">
+        <div class="personalized-skincare-child">
+            <div>
+                <h2 class="personalized-skincare-h2">Personalized skincare,<br> developed with dermatologists <br> and ready at your fingertips</h2>
+            </div>
+            <div class="personalized-skincare-div">
+                Discover expert recommandations with our quick quiz.
+            </div>
+            <div class="personalized-skincare-link">
+                <a href="skincare solution/skincaresolution.html">Take the quiz</a>
+                <img src="assets/move-right.svg" alt="" height="40px" width="40px">
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="lastDiv">
+        <div class="leftDiv">
+            <img src="assets/cerave-logo-white.svg">
+            <p>© CERAVE. All rights reserved.</p>
+        </div>
+        <div class="rightDiv">
+            <div class="lastContent">
+                <div class="leftLinks">
+                    <li class="footerLinks"><a href="#" class="home1">Home</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">Cities</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">Prices</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">FAQ</a></li>
+
+                </div>
+                <div class="rightLinks">
+                    <li class="footerLinks"><a href="#" class="media1">Media</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Terms & Conditions</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Imprint</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Privacy Policy</a></li>
+                </div>
+                
+            </div>
+            <div class="lastImages">
+                <a href="#"><img src="assets/social-media-logo/facebook.png" height="50px" width="50px"></a>
+                <a href=""><img src="assets/social-media-logo/twitter.png" height="50px" width="50px"></a>
+                <a href=""><img src="assets/social-media-logo/instagram.png" height="50px" width="50px"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="slider.js"></script>
+</body>
+</html>

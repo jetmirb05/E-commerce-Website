@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Solution Finder</title>
+    <link rel="stylesheet" href="skincaresolution.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <div class="navbar">
+        <div>
+            <img src="../assets/navbar-logo.svg" alt="" height="200px" width="200px">
+        </div>
+        <div>
+            <ul class="navbar-sections">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Our Products</a></li>
+                <li><a href="../help/WhyCeraVe.html">Why CeraVe</a></li>
+                <li><a href="skincaresolution.html">Skincare Solution Finder</a></li>
+                <li><a href="../card/cart.html">Card</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--MAIN PART-->
+    <div class="main-part" id="main-part">
+        <div class="main-part-child">
+            <div class="main-part-child-first">
+                <div class="main-part-child-first-first">
+                    <h1 class="first-h1">SKINCARE</h1>
+                    <h1 class="second-h1">SOLUTION FINDER</h1>
+                </div>
+                <div>
+                    <button class="skincare-btn" id="lets-go-btn">LET'S GO!</button>
+                </div>
+            </div>
+            
+            <div class="main-part-child-second">
+                <h2 class="skincare-h2">Looking for a skincare routine backed by dermatologists? We’re here to help!</h2>
+                <p class="skincare-p">"This Solution Finder is offered for informational purposes only. The content is not intended to substitute for professional medical advice, diagnoses, or suggested treatments. Please consult your dermatologist or doctor if you have any skin issues or concerns."</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation" id="navigation">
+        <div class="circle" id="circle1"></div>
+        <div class="line" id="line1"></div>
+        <div class="circle" id="circle2"></div>
+        <div class="line" id="line2"></div>
+        <div class="circle" id="circle3"></div>
+    </div>
+    <!--FIRST PART OF QUESTIONING-->
+    <div class="first-part-questioning" id="first-part-questioning">
+        <h1>Let's start with your facial skincare.</h1>
+        <div class="options">
+            <div id="itchy" class="option" onclick="selectOption('itchy')">Skin Texture/Dullness</div>
+            <div id="eczema" class="option" onclick="selectOption('eczema')">Wrinkles and Fine Lines</div>
+            <div id="psoriasis" class="option" onclick="selectOption('psoriasis')">Active Acne Breakout</div>
+            <div id="cracked" class="option" onclick="selectOption('cracked')">Help Prevent New Acne</div>
+            <div id="diabetic" class="option" onclick="selectOption('diabetic')">Dry Skin</div>
+            <div id="rough" class="option" onclick="selectOption('rough')">Dark Spots</div>
+            <div id="dry" class="option" onclick="selectOption('dry')">Dark Circles & Puffiness Around Eyes</div>
+            <div id="veryDry" class="option" onclick="selectOption('veryDry')">Post-Acne Marks</div>
+            <div id="bodyAcne" class="option" onclick="selectOption('bodyAcne')">General Skincare Routine</div>
+        </div>
+        <button class="first-part-questioning-btn" id="first-part-questioning-btn">CONFIRM ></button>
+    </div>
+
+    <div class="second-part-questioning" id="second-part-questioning">
+        <h1>Where do you wear makeup regularly?</h1>
+        <div class="options1">
+            <div class="option" id="makeup" onclick="selectOption('makeup')">I don't wear makeup</div>
+            <div class="option" id="eyes" onclick="selectOption('eyes')">Eye areas only</div>
+            <div class="option" id="everywhere" onclick="selectOption('everywhere')">Everywhere (eyes/face)</div>
+            
+        </div>
+        <div class="back-next-buttons">
+            <button class="first-part-questioning-btn-white" id="second-part-questioning-btn-white">< BACK</button>
+            <button class="first-part-questioning-btn" id="second-part-questioning-btn">CONFIRM ></button>
+        </div>
+    </div>
+    
+    <div class="third-part-questioning" id="third-part-questioning">
+        <h1>Let’s talk sunscreen! How would you prefer to apply it?</h1>
+        <div class="options2">
+            <div class="option" id="sunscreen" onclick="selectOption('sunscreen')">Sunscreen applied separately</div>
+            <div class="option" id="moisturizer" onclick="selectOption('moisturizer')">Sunscreen combined with my moisturizer</div>
+        </div>
+        <div class="back-next-buttons">
+            <button class="first-part-questioning-btn-white" id="third-part-questioning-btn-white">< BACK</button>
+            <button class="first-part-questioning-btn" id="third-part-questioning-btn">CONFIRM ></button>
+        </div>
+    </div>
+
+
+    <div class="lastPart" id="lastPart">
+
+        <div class="lastPart-first-child">
+            <div class="final-step">
+                Final Step
+            </div>
+            <p class="final-step-signup">Sign up to receive your skincare solution, and to be the first to know about the perfect skincare, skincare tips, and special offers.</p>
+        </div>
+
+        <div class="final-step-inputs">
+            <div class="final-step-inputs-child">
+                <input type="text" placeholder="First name *" class="final-step-input" id="firstName">
+                <p class="final-step-p" id="name-p">Please enter a name!</p>
+            </div>
+            <div class="final-step-inputs-child">
+                <input type="text" placeholder="Last name *" class="final-step-input" id="lastName">
+                <p class="final-step-p" id="lastname-p">Please enter a lastname!</p>
+            </div>
+            <div class="final-step-inputs-child">
+                <input type="text" placeholder="Email *" class="final-step-input" id="emailInput">
+                <p class="final-step-p" id="email-p">Please enter an email or a valid one!</p>  
+            </div>
+            <button class="final-step-finish" id="final-step-finish">FINISH</button>
+        </div>
+    </div>
+    
+
+    <div id="whyCeraVe-popup" class="whyCeraVe-popup">
+        <div class="whyCeraVe-popup-content">
+            <div>
+                <img src="../assets/navbar-logo.svg" alt="">
+            </div>
+            <div class="popup-message">
+                <img src="../help/assets/whyCeraVe/star.svg" alt="">
+                <p>As soon as possible, you will see the perfect skincare routine on your email!</p>
+            </div>
+            <div class="popup-respect">
+                <p>Sincerely, Team CeraVe</p>
+            </div>
+            <button class="popup-btn" id="popup-btn">Close</button>
+        </div>
+    </div>
+
+    
+    
+
+    <!--FOOTER-->
+    <div class="lastDiv">
+        <div class="leftDiv">
+            <img src="../assets/cerave-logo-white.svg">
+            <p>© CERAVE. All rights reserved.</p>
+        </div>
+        <div class="rightDiv">
+            <div class="lastContent">
+                <div class="leftLinks">
+                    <li class="footerLinks"><a href="#" class="home1">Home</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">Cities</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">Prices</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">FAQ</a></li>
+
+                </div>
+                <div class="rightLinks">
+                    <li class="footerLinks"><a href="#" class="media1">Media</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Terms & Conditions</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Imprint</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Privacy Policy</a></li>
+                </div>
+                
+            </div>
+            <div class="lastImages">
+                <a href="#"><img src="../assets/social-media-logo/facebook.png" height="50px" width="50px"></a>
+                <a href=""><img src="../assets/social-media-logo/twitter.png" height="50px" width="50px"></a>
+                <a href=""><img src="../assets/social-media-logo/instagram.png" height="50px" width="50px"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="skincaresolution.js"></script>
+</body>
+</html>

@@ -1,0 +1,535 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.navbar-sections{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    color: #0e3353;
+    font-size: 20px;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    color: #0e3353;
+}
+
+.navbar-sections li a:hover {
+    border-bottom: 2px solid #0e3353; /* Adjust the color and thickness as needed */
+}
+
+.whyCeraVe {
+    background-image: url(assets/whyCeraVe/whyCeraVe-banner.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.whyCeraVe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.whyCeraVe-child{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-right: 50%;
+}
+
+.whyCeraVe-nephew{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.whyCeraVe-h1{
+    font-size: 80px;
+    color: #0e3353;
+    font-weight: bold;
+    letter-spacing: 1rem;
+    text-align: center;
+}
+
+.whyCeraVe-p{
+    font-size: 40px;
+    color: #0e3353;
+    font-weight: bold;
+    letter-spacing: 1rem;
+}
+
+.main-science{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.science-that-goes-deep{
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    
+}
+
+.science-p{
+    height: 180px;
+    font-size: 22px;
+    line-height: 2.25rem;
+}
+
+.science-h1{
+    font-size: 46px;
+    color: #0e3353;
+    font-weight: bold;
+    letter-spacing: .125rem;
+    
+}
+
+.first-stgd-child{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.second-stgd-child{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.second-stgd-nephew{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 600px;
+    height: 370px;
+}
+
+.second-stgd-h2{
+    color: #0772ba;
+    letter-spacing: .12625rem;
+    font-size: 18px;
+}
+
+.second-stgd-p{
+    height: 180px;
+    font-size: 20px;
+    line-height: 1.75rem;
+    width: 500px;
+}
+
+.second-stgd-nephew1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.science-vertical-line{
+    width: 1px;
+    background-color: #e3e3e3;
+    height: 400px;
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+}
+
+.second-stgd-nepheww{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-stgd-h1{
+    font-size: 40px;
+    color: #0e3353;
+    font-weight: bold;
+    letter-spacing: .125rem;
+}
+
+.subscribe{
+    background-image: url(assets/whyCeraVe/subscribe-banner.png);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-h2{
+    color: #0e3353;
+    font-size: 46px;
+    line-height: 3.6875rem;
+}
+
+.subscribe-h3{
+    color: #005F9E;
+    font-size: 32px;
+    line-height: 2.1875rem;
+    letter-spacing: -.02125rem;
+}
+
+.up-subscribe{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.low-subscribe{
+    display: flex;
+}
+
+.subscribe-input{
+    width: 475px;
+    height: 48px;
+    line-height: 2.625rem;
+    padding-left: 20px;
+    font-size: 15px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+}
+
+.subscribe-input:hover{
+    cursor: pointer;
+}
+
+
+
+.subsribe-btn{
+    width: 214px;
+    height: 48px;
+    font-size: 15px;
+    letter-spacing: -.01563rem;
+    background-color: #0e3353;
+    color: white;
+    border: none;
+}
+
+.subsribe-btn:hover{
+    background-color: #000000;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.you-may-like{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.you-may-like-child{
+    max-width: 1280px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.yml-h2{
+    font-size: 46px;
+    color: #0e3353;
+}
+
+.you-may-like-card{
+    width: 380px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.you-may-like-card:hover{
+    cursor: pointer;
+}
+
+.yml-card-h3{
+    font-size: 25px;
+    color: #0e3353;
+    margin: 15px 0;
+}
+
+.yml-card-p{
+    font-size: 19px;
+    color: #000000;
+}
+
+.yml-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.yml-btn{
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid #0772ba;
+    color: #0772ba;
+    width: 210px;
+    height: 48px;
+    font-weight: bold;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.yml-btn:hover{
+    color: #0e3353;
+    border: 1px solid #0e3353;
+    cursor: pointer;
+}
+
+.faq{
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    background-color: #f2f2f2;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-h4{
+    color: #0772ba;
+    margin: 15px 0;
+    font-size: 25px;
+    line-height: 2rem;
+    letter-spacing: .26563rem;
+}
+
+.faq-h2{
+    margin: 15px 0;
+    line-height: 3.6875rem;
+    font-size: 45px;
+    color: #0e3353;
+}
+
+.faq-contact-us-btn{
+    width: 250px;
+    height: 60px;
+    border: 1px solid #0772ba;
+    background-color: white;
+    color: #0772ba;
+    font-size: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    
+}
+
+.faq-contact-us-btn:hover{
+    border: 1px solid #0e3353;
+    color: #0e3353;
+    cursor: pointer;
+}
+
+.faq-see-our-faq-btn{
+    width: 250px;
+    height: 60px;
+    border: 1px solid #0772ba;
+    background-color: #0772ba;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+   
+}
+
+.faq-see-our-faq-btn:hover{
+    background-color: #0e3353;
+    border: 1px solid #0e3353;
+    cursor: pointer;
+}
+
+.faq-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.faq-firstchild{
+    margin-top: 50px;
+}
+
+
+
+.whyCeraVe-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+}
+
+.whyCeraVe-popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 500px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-message{
+    
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-respect{
+    
+    color: #0e3353;
+    font-style: italic;
+}
+
+.popup-btn{
+    margin-top: 30px;
+    height: 40px;
+    background-color: #0e3353;
+    color: white;
+    border: none;
+}
+
+.popup-btn:hover{
+    cursor: pointer;
+}
+
+.lastDiv{
+    background-color: #0e3353;
+    /* width: 2000px; */
+    display: flex;
+    padding-bottom: 84px;
+    
+}
+
+.leftDiv{
+    padding-top: 150px;
+    color: white;
+    margin-left: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home1{
+    color: #f2f2f2;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+.media1{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.lastContent{
+    min-width: 301px;
+    justify-content: space-between;
+    display: flex
+}
+
+.leftLinks > *:not(:last-child) {
+    
+    margin-bottom: 6px;
+  }
+
+.footerLinks{
+    
+    list-style: none;
+    
+}
+
+.rightDiv{
+    margin-left: 300px;
+    padding-top: 100px;
+    
+}
+
+.footer1{
+    display: flex;
+
+}
+
+.lastImages{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}

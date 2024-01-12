@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-sections{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    color: #0e3353;
+    font-size: 20px;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    color: #0e3353;
+}
+
+.navbar-sections li a:hover {
+    border-bottom: 2px solid #0e3353; /* Adjust the color and thickness as needed */
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.cart-h1{
+    color: #0e3353;
+    margin-top: 50px;
+}
+
+.cart-h3{
+    color: #0e3353;
+}
+
+.cart-p{
+    color: #0e3353;
+}
+
+.cart-items{
+    margin-top: 80px;
+}
+
+.cart-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.delete-btn{
+    background-color: red;
+    color: white;
+    width: 60px;
+    height: 30px;
+    border: 1px solid red;
+    
+}
+
+.delete-btn:hover{
+    cursor: pointer;
+}
+
+.total-amount{
+  
+    color: #0e3353;
+    font-size: 20px;
+    
+}
+
+.total-purchase{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.purchase-btn{
+    width: 100px;
+    height: 40px;
+    background-color: #0e3353;
+    color: white;
+    border: 1px solid #0e3353;
+
+}
+
+.purchase-btn:hover{
+    cursor: pointer;
+}
+
+.lastDiv{
+    background-color: #0e3353;
+    /* width: 2000px; */
+    display: flex;
+    padding-bottom: 84px;
+    margin-top: 500px;
+    
+}
+
+.leftDiv{
+    padding-top: 150px;
+    color: white;
+    margin-left: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home1{
+    color: #f2f2f2;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+.media1{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.lastContent{
+    min-width: 301px;
+    justify-content: space-between;
+    display: flex
+}
+
+.leftLinks > *:not(:last-child) {
+    /* styles for all children except the last one */
+    margin-bottom: 6px;
+  }
+
+.footerLinks{
+    
+    list-style: none;
+    
+}
+
+.rightDiv{
+    margin-left: 300px;
+    padding-top: 100px;
+    
+}
+
+.footer1{
+    display: flex;
+
+}
+
+.lastImages{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.whyCeraVe-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+}
+
+.whyCeraVe-popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 600px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-message{
+    
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-respect{
+    
+    color: #0e3353;
+    font-style: italic;
+}
+
+.popup-btn{
+    margin-top: 0px;
+    height: 60px;
+    background-color: #0e3353;
+    color: white;
+    border: none;
+}
+
+.popup-btn:hover{
+    cursor: pointer;
+}
+
+.purchase-input{
+    width: 100%;
+    height: 38px;
+    padding-left: 20px;
+    font-size: 15px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+}
+
+
+.payment-h1{
+    color: #0e3353;
+    text-align: center;
+}
+
+.done-img{
+    display: none;
+}
+
+#done-img{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 600px;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#done-img >img{
+    margin-top: 100px;
+}
+
+.close-done-btn{
+    margin-top: 40px;
+    height: 60px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    border: none;
+    
+}
+.close-done-btn{
+    cursor: pointer;
+}

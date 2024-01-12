@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Cleanser</title>
+    <link rel="stylesheet" href="facialmoisturizer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <div class="navbar">
+        <div>
+            <img src="../../assets/navbar-logo.svg" alt="" height="200px" width="200px">
+        </div>
+        <div>
+            <ul class="navbar-sections">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#product-sections">Our Products</a></li>
+                <li><a href="../../help/WhyCeraVe.html">Why CeraVe</a></li>
+                <li><a href="../../skincare solution/skincaresolution.html">Skincare Solution Finder</a></li>
+                <li><a href="../../card/cart.html">Card</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    
+
+
+
+    <div class="import">
+
+    </div>
+
+    <div class="main-popUp" id="main-popUp">
+        
+        <div class="facialpopUp" id="facialpopUp">
+            <div class="facial-popUp-up">
+                <div>
+                    <p class="facial-popUp-up-one">FIND THE RIGHT</p>
+                    <p class="facial-popUp-up-two">CLEANSER</p>
+                    <p class="facial-popUp-up-three">FOR YOU</p>
+                    <p class="facial-popUp-up-four">in a few easy steps</p>
+                </div>
+                <a href="../../skincare solution/skincaresolution.html">
+                    <button class="facial-popUp-up-btn">TAKE THE QUIZ</button>
+                </a>
+            </div>
+            <div class="facial-popUp-down">
+                <button class="facial-popUp-close-btn" id="facial-popUp-close-btn">CLOSE</button>
+            </div>
+        </div>
+
+        <div class="green-popUp" id="green-popUp">
+            <img src="https://s3.amazonaws.com/jebbit-assets/images/undefined/business-images/A04plJXYQ4K8Oaqr4Toh_CERAVE-MOISTURIZE-LOTION-V1_2_50.png" alt="" width="40px" height="40px">
+        </div>
+    </div>
+    
+
+    <div class="lastDiv">
+        <div class="leftDiv">
+            <img src="../../assets/cerave-logo-white.svg">
+            <p>© CERAVE. All rights reserved.</p>
+        </div>
+        <div class="rightDiv">
+            <div class="lastContent">
+                <div class="leftLinks">
+                    <li class="footerLinks"><a href="#" class="home1">Home</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">Cities</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">Prices</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">FAQ</a></li>
+
+                </div>
+                <div class="rightLinks">
+                    <li class="footerLinks"><a href="#" class="media1">Media</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Terms & Conditions</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Imprint</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Privacy Policy</a></li>
+                </div>
+                
+            </div>
+            <div class="lastImages">
+                <a href="#"><img src="../../assets/social-media-logo/facebook.png" height="50px" width="50px"></a>
+                <a href=""><img src="../../assets/social-media-logo/twitter.png" height="50px" width="50px"></a>
+                <a href=""><img src="../../assets/social-media-logo/instagram.png" height="50px" width="50px"></a>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <script type="module">
+        import ProductObject, { sortProductsCheapestToExpensive, sortProductsExpensiveToCheapest } from '../../modules/ProductObject.js';
+
+        document.querySelector('.import').innerHTML = ProductObject('FACIAL', 'MOISTURIZERS', 'Applying a facial moisturizer is a crucial step in any skincare routine—no matter your skin type. Whether you have dry skin, oily skin, combination skin, acne-prone skin, or other skin concerns, CeraVe has a facial moisturizer for you. All of our formulas contain ceramides to help restore and maintain your skin’s barrier, which helps your skin retain moisture and keep irritants out. They also include other beneficial ingredients such as hyaluronic acid to further help your skin hold onto moisture and calming niacinamide . We have creams, lotions, and a face oil developed with dermatologists, including day and night creams, moisturizers with SPF, anti-aging products, and much more.', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/skincare/moisturizers/facial-moisturizers/ultra-light-moisturizing-gel/desktop-700x875/ultra-light-gel-packshot-desktop-700x875-v1.jpg', ' Ultra-Light Moisturizing Gel', 'Refreshing, lightweight texture with a weightless feel on skin', '24.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/skincare/moisturizers/am-facial-moisturizing-lotion-with-sunscreen/photos/2022/700x785/cerave_am_facial_moisturizing_lotion_3oz-700x875-v1.jpg', 'AM Facial Moisturizing Lotion with Sunscreen', 'Non-comedogenic daytime moisturizer with SPF 30', '14.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products-v3/pm-facial-moisturizing-lotion/700x875/cerave_pm-facial-moisturizing-lotion-3oz_front-700x875-v2.jpg', 'PM Facial Moisturizing Lotion', 'Lightweight night cream with niacinamide', '39.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products-v4/moisturizing-cream/cerave_moisturizing_cream_16oz_jar_front-700x875-v3.jpg', 'Moisturizing Cream', 'Barrier-restoring moisturizing cream for face and body', '34.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products-v3/daily-moisturizing-lotion/700x875/cerave_daily_moisturizing_lotion_12oz_front-700x875-v2.jpg', 'Daily Moisturizing Lotion', 'Oil-free moisturizer with hyaluronic acid', '44.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/skincare/moisturizers/facial-moisturizers/skin-renewing-eye-cream/photos/2022/2022-07/04_skin_renewing_eye_cream_pack_shots_tubes_cap_on_0041_front_main-no-sticker_700x875_v2.jpg', 'Skin Renewing Eye Cream', 'Anti-aging eye cream for wrinkles and fine lines', '24.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products-v4/skin-renewing-night-cream/01_skin_renewing_night_cream_jar_front_packshot-700x875-v2.jpg', 'Skin Renewing Night Cream', 'Skin renewing night cream with peptides', '9.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products-v3/eye-repair-cream/700x875/cerave_eye_repair_cream_05oz_front-700x875-v2.jpg', 'Eye Repair Cream', 'Moisturizing eye cream for dark circles and puffiness', '19.99$','https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products/hydrating-hyaluronic-acid-serum/700x875/hydrating-hyaluronic-acid-serum-front-700x875-v1.jpg','Hydrating Hyaluronic Acid Serum', 'Hydrating hyaluronic acid serum', '24.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products/ultra-light-moisturizing-lotion/700x875/cerave_ultra-light_moisturizing_lotion-front-700x875-v1.jpg', 'Ultra-Light Moisturizing Lotion SPF 30', 'Lightweight oil-free moisturizer with SPF', '9.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products/skin-renewing-resize/skin-renewing-day-cream/skin-renewing-day-cream-bottle-front-700x875-v1.jpg', 'Skin Renewing Day Cream', 'Anti-aging moisturizer with retinol & SPF', '34.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products/skin-renewing-gel-oil/700x875/renewing-gel-oil-front-700x875-v1.jpg','Skin Renewing Gel Oil', 'Hydrating oil for skin radiance','24.99$');
+
+        window.sortProductsCheapestToExpensive = sortProductsCheapestToExpensive;
+        window.sortProductsExpensiveToCheapest = sortProductsExpensiveToCheapest;
+        document.querySelectorAll('.product-btn').forEach(button => {
+        button.addEventListener('click', function() {
+        const productElement = this.closest('.product');
+        const productName = productElement.querySelector('.product-h2').innerText;
+        const productPrice = productElement.querySelector('.product-h1').innerText;
+        const productImg = productElement.querySelector('.product-img').src;
+
+        const price = parseFloat(productPrice.replace(/[^0-9\.]/g, ''));
+
+        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        cartItems.push({ name: productName, price: price, imgUrl: productImg });
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+    });
+});
+    </script>
+    <script src="facialmoisturizer.js"></script>
+</body>
+</html>

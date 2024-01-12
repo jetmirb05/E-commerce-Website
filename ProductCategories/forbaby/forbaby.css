@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-sections{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    color: #0e3353;
+    font-size: 20px;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    color: #0e3353;
+}
+
+.navbar-sections li a:hover {
+    border-bottom: 2px solid #0e3353; /* Adjust the color and thickness as needed */
+}
+
+
+
+.main-banner{
+    background-image: url(forbaby.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.main-banner-child{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+.first-banner-h1{
+    letter-spacing: .125rem;
+    color: #0e3353;
+    margin: 15px 0px;
+    font-size: 20px;
+}
+
+.second-banner-h1{
+    letter-spacing: .15625rem;
+    color: #0e3353;
+    font-size: 58px;
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.product-layout{
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 80px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.product{
+    width: 260px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.product-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-img{
+    width: 100%;
+    height: 325px;
+}
+
+.product-h2{
+    width: 230px;
+    height: 53px;
+    color: #0e3353;
+    padding: 0px 0px 5px;
+    font-size: 20px;
+}
+
+.product-p{
+    width: 230px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 1.25rem;
+}
+
+.product-btn{
+    width: 260px;
+    height: 45px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #0773bb;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #0773bb;
+}
+
+.product-btn:hover{
+    background-color: #092640;
+    cursor: pointer;
+}
+
+.product-h1{
+    color: #0e3353;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-p{
+    font-size: 26px;
+    line-height: 2.5rem;
+    width: 1325px;
+    height: 280px;
+    text-align: center;
+    color: #262626;
+}
+
+.gray{
+    height: 20px;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.lastDiv{
+    background-color: #0e3353;
+    /* width: 2000px; */
+    display: flex;
+    padding-bottom: 84px;
+    margin-top: 50px;
+    
+}
+
+.leftDiv{
+    padding-top: 150px;
+    color: white;
+    margin-left: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home1{
+    color: #f2f2f2;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+.media1{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.lastContent{
+    min-width: 301px;
+    justify-content: space-between;
+    display: flex
+}
+
+.leftLinks > *:not(:last-child) {
+    /* styles for all children except the last one */
+    margin-bottom: 6px;
+  }
+
+.footerLinks{
+    
+    list-style: none;
+    
+}
+
+.rightDiv{
+    margin-left: 300px;
+    padding-top: 100px;
+    
+}
+
+.footer1{
+    display: flex;
+
+}
+
+.lastImages{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.main-sort{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50px;
+    
+}
+
+.sort-price{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #0072CF;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.sort-btn{
+    background-color: #0072CF;
+    border: 1px solid #0072CF;
+    align-items: center;
+    justify-content: center;
+}

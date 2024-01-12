@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ointment.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div>
+            <img src="../../assets/navbar-logo.svg" alt="" height="200px" width="200px">
+        </div>
+        <div>
+            <ul class="navbar-sections">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#product-sections">Our Products</a></li>
+                <li><a href="../../help/WhyCeraVe.html">Why CeraVe</a></li>
+                <li><a href="../../skincare solution/skincaresolution.html">Skincare Solution Finder</a></li>
+                <li><a href="../../card/cart.html">Card</a></li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <!--BANNER-->
+    <div class="main-banner">
+        <div class="main-banner-child">
+            <h1 class="first-banner-h1">
+                SKIN
+            </h1>
+            <h1 class="second-banner-h1">
+                OINTMENT
+            </h1>
+        </div>
+
+        <div></div>
+    </div>
+
+    <!--TEXT-->
+    <div class="text">
+        <p class="text-p">Applying a facial moisturizer is a crucial step in any skincare routine—no matter your skin type. Whether you have dry skin, oily skin, combination skin, acne-prone skin, or other skin concerns, CeraVe has a facial moisturizer for you. All of our formulas contain ceramides to help restore and maintain your skin’s barrier, which helps your skin retain moisture and keep irritants out. They also include other beneficial ingredients such as hyaluronic acid to further help your skin hold onto moisture and calming niacinamide . We have creams, lotions, and a face oil developed with dermatologists, including day and night creams, moisturizers with SPF, anti-aging products, and much more.</p>
+    </div>
+
+    <div class="gray"></div>
+
+   
+    
+
+    <!--PRODUCTS-->
+    <div class="products">
+        <div class="main-sort">
+            <div class="sort-price">
+                <div>
+                    Sort By Price
+                </div>
+                <div>
+                    <button onclick="sortProductsCheapestToExpensive()" class="sort-btn"><img src="../../assets/arrow-up.svg" alt="" ></button>
+                    <button onclick="sortProductsExpensiveToCheapest()" class="sort-btn"><img src="../../assets/arrow-down.svg" alt="" ></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout">
+            <div class="product">
+                <img src="https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/product-v6/cerave_healing_ointment_12oz_with-badge-front_700x875-v2.jpg" alt="" class="product-img">
+                <div class="product-content">
+                    <h2 class="product-h2">Healing Ointment</h2>
+                    <p class="product-p">Healing balm for cracked, chafed & extremely dry skin</p>
+                    <h1 class="product-h1">24.99$</h1>
+                </div>
+                <button class="product-btn">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="lastDiv">
+        <div class="leftDiv">
+            <img src="../../assets/cerave-logo-white.svg">
+            <p>© CERAVE. All rights reserved.</p>
+        </div>
+        <div class="rightDiv">
+            <div class="lastContent">
+                <div class="leftLinks">
+                    <li class="footerLinks"><a href="#" class="home1">Home</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">Cities</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">Prices</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">FAQ</a></li>
+
+                </div>
+                <div class="rightLinks">
+                    <li class="footerLinks"><a href="#" class="media1">Media</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Terms & Conditions</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Imprint</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Privacy Policy</a></li>
+                </div>
+                
+            </div>
+            <div class="lastImages">
+                <a href="#"><img src="../../assets/social-media-logo/facebook.png" height="50px" width="50px"></a>
+                <a href=""><img src="../../assets/social-media-logo/twitter.png" height="50px" width="50px"></a>
+                <a href=""><img src="../../assets/social-media-logo/instagram.png" height="50px" width="50px"></a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import ProductObject, { sortProductsCheapestToExpensive, sortProductsExpensiveToCheapest } from '../../modules/ProductObject.js';
+
+
+        window.sortProductsCheapestToExpensive = sortProductsCheapestToExpensive;
+        window.sortProductsExpensiveToCheapest = sortProductsExpensiveToCheapest;
+        document.querySelectorAll('.product-btn').forEach(button => {
+        button.addEventListener('click', function() {
+        const productElement = this.closest('.product');
+        const productName = productElement.querySelector('.product-h2').innerText;
+        const productPrice = productElement.querySelector('.product-h1').innerText;
+        const productImg = productElement.querySelector('.product-img').src;
+
+        const price = parseFloat(productPrice.replace(/[^0-9\.]/g, ''));
+
+        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        cartItems.push({ name: productName, price: price, imgUrl: productImg });
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+    });
+});
+    </script>
+</body>
+</html>

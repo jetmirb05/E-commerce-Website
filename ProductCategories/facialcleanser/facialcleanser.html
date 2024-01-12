@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Cleanser</title>
+    <link rel="stylesheet" href="facialcleanser.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <div class="navbar">
+        <div>
+            <img src="../../assets/navbar-logo.svg" alt="" height="200px" width="200px">
+        </div>
+        <div>
+            <ul class="navbar-sections">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#product-sections">Our Products</a></li>
+                <li><a href="../../help/WhyCeraVe.html">Why CeraVe</a></li>
+                <li><a href="../../skincare solution/skincaresolution.html">Skincare Solution Finder</a></li>
+                <li><a href="../../card/cart.html">Card</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    
+    <div class="import">
+
+    </div>
+
+    <div>
+        <div>
+            Sort By Price
+        </div>
+        <div>
+            <img src="../../assets/arrow-up.svg" alt="" onclick="sortProductsCheapestToExpensive()">
+            <img src="../../assets/arrow-down.svg" alt="" onclick="sortProductsCheapestToExpensive()">
+        </div>
+    </div>
+
+    <div class="main-popUp" id="main-popUp">
+        
+        <div class="facialpopUp" id="facialpopUp">
+            <div class="facial-popUp-up">
+                <div>
+                    <p class="facial-popUp-up-one">FIND THE RIGHT</p>
+                    <p class="facial-popUp-up-two">CLEANSER</p>
+                    <p class="facial-popUp-up-three">FOR YOU</p>
+                    <p class="facial-popUp-up-four">in a few easy steps</p>
+                </div>
+                <a href="../../skincare solution/skincaresolution.html">
+                    <button class="facial-popUp-up-btn">TAKE THE QUIZ</button>
+                </a>
+            </div>
+            <div class="facial-popUp-down">
+                <button class="facial-popUp-close-btn" id="facial-popUp-close-btn">CLOSE</button>
+            </div>
+        </div>
+
+        <div class="green-popUp" id="green-popUp">
+            <img src="https://i.jebbit.com/images/undefined/business-images/fWJZdZLmS1qOakGfQz8b_CERAVE-MOISTURIZE-LOTION-ICON_green_v1-fotor-bg-remover-20230626152629.png" alt="" width="40px" height="40px">
+        </div>
+    </div>
+
+    <div class="lastDiv">
+        <div class="leftDiv">
+            <img src="../../assets/cerave-logo-white.svg">
+            <p>© CERAVE. All rights reserved.</p>
+        </div>
+        <div class="rightDiv">
+            <div class="lastContent">
+                <div class="leftLinks">
+                    <li class="footerLinks"><a href="#" class="home1">Home</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">Cities</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">Prices</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">FAQ</a></li>
+
+                </div>
+                <div class="rightLinks">
+                    <li class="footerLinks"><a href="#" class="media1">Media</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Terms & Conditions</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Imprint</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Privacy Policy</a></li>
+                </div>
+                
+            </div>
+            <div class="lastImages">
+                <a href="#"><img src="../../assets/social-media-logo/facebook.png" height="50px" width="50px"></a>
+                <a href=""><img src="../../assets/social-media-logo/twitter.png" height="50px" width="50px"></a>
+                <a href=""><img src="../../assets/social-media-logo/instagram.png" height="50px" width="50px"></a>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    
+    
+    <script type="module">
+        import ProductObject, { sortProductsCheapestToExpensive, sortProductsExpensiveToCheapest } from '../../modules/ProductObject.js';
+
+        document.querySelector('.import').innerHTML = ProductObject('FACIAL','CLEANSERS','Whether you have dry, oily, combination, or sensitive skin, our facial cleansers are designed to meet your needs without leaving your skin feeling stripped. If you’re looking to manage clogged pores, excess oil, sensitive skin, or uneven texture, our face washes, gels, creams, and cleansing wipes have you covered. All of our gentle facial cleansers feature three essential ceramides that work together to lock in moisture and help restore your skins protective barrier. We have oil-free and no-rinse facial cleansers, as well as ones that gently exfoliate, contain calming niacinamide, and maintain skin’s natural moisture via hyaluronic acid. Whatever your concerns, we have all your skincare routine needs','https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/skincare/cleansers/acne-foaming-cream-wash/acne-foaming-wash-pdp-700x785-v1.jpg', 'Acne Foaming Cream Wash', '10% Benzoyl peroxide acne wash for face and body', '49.99%', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products/hydrating-foaming-oil-cleanser/without-badge/desktop/12_hydrating_foaming_oil_cleanser_8oz_int_0153_main_r2-desktop-700x875-v1.jpg', 'Hydrating Foaming Oil Cleanser', 'Lightweight cleansing oil for face and body', '69.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products-v3/foaming-facial-cleanser/700x875/cerave_foaming-facial-cleanser-12oz_front-700x875-v2.jpg', 'Foaming Facial Cleanser', 'Foaming gel cleanser for normal to oily skin', '39.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/skincare/cleansers/hydrating-facial-cleanser/photos/2022/700x875/cerave_daily_hydrating-cleanser_12oz_front-700x875-v2.jpg', 'Hydrating Facial Cleanser', 'Hydrating cleanser for normal-to-dry skin', '29.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products/cream-to-foam-cleanser/700x875/cream-to-foam-cleanser-front-700x875-v1.jpg', 'Hydrating Cream-to-Foam Cleanser', 'Creamy foaming face wash for normal-to-dry skin', '19.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products-v3/renewing-sa-cleanser/700x875/renewing_sa_cleanser_8oz_front_new-700x875-v2.jpg', 'Renewing SA Cleanser', 'Salicylic acid foaming gel cleanser for smooth skin','49.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/skincare/cleansers/acne-salicylic-acid-cleanser/acne-control-cleanser-front-700x785-v1.jpg', 'Acne Control Cleanser', 'Gel-to-foam salicylic acid acne face wash', '39.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/skincare/cleansers/acne-pdp-resizes/foaming-cleanser/acne-foaming-cleanser-tube-packshot-700x785-v1.jpg', 'Acne Foaming Cream Cleanser', 'Foaming 4% benzoyl peroxide acne face wash', '19.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/skincare/cleansers/makeup-removing-cleanser-balm/photos/2022/2022-11/makeup-removing-cleansing-balm-front_primary-700x875-allure-seal-v2.jpg', 'Makeup Removing Cleanser Balm', 'Makeup removing cleansing balm that hydrates', '29.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/skincare/cleansers/comforting-eye-makeup-remover/photos/2022/2022-07/comforting-eye-makeup-remover-front_primary-no-sticker_700x875-v2.jpg', 'Comforting Eye Makeup Remover', 'Gentle eye makeup remover that comforts skin', '19.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products/hydrating-makeup-removing-plant-based-wipes/new-images/700x875/wipes-coming-soon-front-no-sticker-700x875-v1.jpeg', 'Hydrating Makeup Removing Plant-Based', 'Makeup removing compostable wipes', '39.99$', 'https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products-v4/make-removing-cleanser-cloths/cerave_makeup_removing_cleanser_cloths_front-700x875-v3.jpg', 'Makeup Removing Cleanser Cloths', 'Makeup remover cloth and gentle cleanser', '39.99$');
+
+        window.sortProductsCheapestToExpensive = sortProductsCheapestToExpensive;
+        window.sortProductsExpensiveToCheapest = sortProductsExpensiveToCheapest;
+        document.querySelectorAll('.product-btn').forEach(button => {
+        button.addEventListener('click', function() {
+        const productElement = this.closest('.product');
+        const productName = productElement.querySelector('.product-h2').innerText;
+        const productPrice = productElement.querySelector('.product-h1').innerText;
+        const productImg = productElement.querySelector('.product-img').src;
+
+        const price = parseFloat(productPrice.replace(/[^0-9\.]/g, ''));
+
+        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        cartItems.push({ name: productName, price: price, imgUrl: productImg });
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+    });
+});
+    </script>
+    <script src="facialcleanser.js"></script>
+</body>
+</html>

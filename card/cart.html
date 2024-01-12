@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div>
+            <img src="../assets/navbar-logo.svg" alt="" height="200px" width="200px">
+        </div>
+        <div>
+            <ul class="navbar-sections">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#product-sections">Our Products</a></li>
+                <li><a href="../help/WhyCeraVe.html">Why CeraVe</a></li>
+                <li><a href="../skincare solution/skincaresolution.html">Skincare Solution Finder</a></li>
+                <li><a href="card/cart.html">Card</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-container"> 
+        <h1 class="cart-h1">Your Shopping Cart</h1>
+        <div id="cart-items">
+        
+        </div>
+    </div>
+
+    <div class="total-purchase">
+        <p id="total-amount" class="total-amount"></p>
+        <button class="purchase-btn" id="purchase-btn">PURCHASE</button>
+    </div>
+
+    <div id="whyCeraVe-popup" class="whyCeraVe-popup">
+        <div class="whyCeraVe-popup-content" id="whyCeraVe-popup-content">
+            <h1 class="payment-h1">Payment Process</h1>
+            <div>
+                <label for="email">Email</label>
+                 <input type="text" placeholder="Name" class="purchase-input" id="email">
+            </div>
+            <div>
+                <label for="email">Surname</label>
+                 <input type="text" placeholder="Name" class="purchase-input" id="email">
+            </div>
+            <div>
+                <label for="email">Card Number</label>
+                 <input type="text" placeholder="1234-1234-1234-1234" class="purchase-input" id="email">
+            </div>
+            <div>
+                <label for="email">CW</label>
+                 <input type="text" placeholder="123" class="purchase-input" id="email">
+            </div>
+            
+            <button class="popup-btn" id="popup-btn">Purchase</button>
+        </div>
+        <div id="done-img">
+            
+            <img src="done_6459980.png" alt="" width="300px" height="300px">
+            <button class="close-done-btn" id="close-done-btn">Close</button>
+            
+        </div>
+    </div>
+
+
+    <div class="lastDiv">
+        <div class="leftDiv">
+            <img src="../assets/cerave-logo-white.svg">
+            <p>© CERAVE. All rights reserved.</p>
+        </div>
+        <div class="rightDiv">
+            <div class="lastContent">
+                <div class="leftLinks">
+                    <li class="footerLinks"><a href="#" class="home1">Home</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">Cities</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">Prices</a></li>
+                    <li class="footerLinks"><a href="#" class="home1">FAQ</a></li>
+
+                </div>
+                <div class="rightLinks">
+                    <li class="footerLinks"><a href="#" class="media1">Media</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Terms & Conditions</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Imprint</a></li>
+                    <li class="footerLinks"><a href="#" class="media1">Privacy Policy</a></li>
+                </div>
+                
+            </div>
+            <div class="lastImages">
+                <a href="#"><img src="../assets/social-media-logo/facebook.png" height="50px" width="50px"></a>
+                <a href=""><img src="../assets/social-media-logo/twitter.png" height="50px" width="50px"></a>
+                <a href=""><img src="../assets/social-media-logo/instagram.png" height="50px" width="50px"></a>
+            </div>
+        </div>
+    </div>
+    <script src="cart.js">
+    </script>
+
+</body>
+</html>
